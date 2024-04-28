@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Adicionando estilos para centralizar e redimensionar a imagem */
+    img {
+      max-width: 250px; /* Define a largura máxima da imagem */
+      display: block; /* Para centralizar a imagem */
+      margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem na parte inferior */
+    }
+  </style>
+</head>
+<body>
+  
+    <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/4283835-gx-logo-monogram-emblem-style-with-crown-shape-design-template-gratis-vetor.jpg" alt="logo">
+    
+    <div class="calculator">
+      <h2>Calculadora de IMC</h2>
+      <div>
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" placeholder="Digite seu peso">
+      </div>
+      <div>
+        <label for="height">Altura (m):</label>
+        <input type="number" id="height" placeholder="Digite sua altura">
+      </div>
+      <button onclick="calculateIMC()">Calcular IMC</button>
+      <div id="result"></div>
+    </div>
+    <div class="image-container bottom-image"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
